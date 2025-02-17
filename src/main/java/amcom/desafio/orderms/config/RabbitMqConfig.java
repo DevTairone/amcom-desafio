@@ -13,7 +13,7 @@ public class RabbitMqConfig {
     public static final String ORDER_CREATED_QUEUE = "amcom.desafio.orderms.order-created";
 
     @Bean
-    public Jackson2JsonMessageConverter messageConverter() {
+    public Jackson2JsonMessageConverter jackson2JsonMessageConverter() {
         return new Jackson2JsonMessageConverter();
     }
 
