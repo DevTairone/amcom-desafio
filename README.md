@@ -35,21 +35,5 @@
 
   - Segue um exemplo de mensagem que deve ser consumida da fila RabbitMQ
  
-   """
-    {
-       "codigoPedido": 5322,
-       "codigoCliente":1,
-       "itens": [
-           {
-               "produto": "cadeiras",
-               "quantidade": 100,
-               "preco": 10.50
-           },
-           {
-               "produto": "mesas",
-               "quantidade": 10,
-               "preco": 8.00
-           }
-       ]
-   }
-  """
+  ![image](https://github.com/user-attachments/assets/ed98b229-5e81-4fe4-959a-0a38830b93a7)
+
