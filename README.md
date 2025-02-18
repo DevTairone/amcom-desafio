@@ -27,3 +27,29 @@
  <h2></h2>
 
  ![image](https://github.com/user-attachments/assets/6b9e32bd-4197-4c59-a9bc-3a09ca4b1847)
+
+<h2></h2>
+
+
+* Modelo
+
+  - Segue um exemplo de mensagem que deve ser consumida da fila RabbitMQ
+ 
+   """
+    {
+       "codigoPedido": 5322,
+       "codigoCliente":1,
+       "itens": [
+           {
+               "produto": "cadeiras",
+               "quantidade": 100,
+               "preco": 10.50
+           },
+           {
+               "produto": "mesas",
+               "quantidade": 10,
+               "preco": 8.00
+           }
+       ]
+   }
+  """
