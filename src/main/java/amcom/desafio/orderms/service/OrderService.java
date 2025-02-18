@@ -10,7 +10,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.stereotype.Service;
-
 import org.bson.Document;
 import java.math.BigDecimal;
 import java.util.List;
@@ -54,7 +53,7 @@ public class OrderService {
                 group().sum("total").as("total")
         );
 
-        var response = mongoTemplate.aggregate(aggregations, "tb_orders", Document.class);
+        var response = mongoTemplate.aggregate(aggregations, "orders", Document.class);
 
         return new BigDecimal(response.getUniqueMappedResult().get("total").toString());
     }
